@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleShowcase.css">
+    <title>Inscrieri</title>
+</head>
+<body>
+    <div class="navbar"> 
+        <ul> 
+          <li><a href="homepage.html">HOME</a></li> 
+          <li><a href="infinitybolts.html">VIDEO</a></li> 
+          <li><a href="showcase.html">SHOWCASE</a></li> 
+          <li><a href="contactpage.html">CONTACT</a></li> 
+              
+        </ul> 
+      </div> 
+<div class="titlu"> Stay Inside - Medical Helper</div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 7</div>
+    <img src="img/inside1.jpeg" style="width:40%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 7</div>
+    <img src="img/inside2.jpeg" style="width:40%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 7</div>
+    <img src="img/inside3.jpeg" style="width:40%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 7</div>
+    <img src="img/inside4.jpeg" style="width:40%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 7</div>
+    <img src="img/inside5.jpeg" style="width:40%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 7</div>
+    <img src="img/inside6.jpeg" style="width:40%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">7 / 7</div>
+    <img src="img/inside7.jpeg" style="width:40%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/inside1.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Patient">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/inside2.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Patient">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/inside3.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Patient">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/inside4.jpeg" style="width:100%" onclick="currentSlide(4)" alt="Patient">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/inside5.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Patient">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/inside6.jpeg" style="width:100%" onclick="currentSlide(6)" alt="Doctor">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/inside7.jpeg" style="width:100%" onclick="currentSlide(7)" alt="Doctor">
+    </div>
+  </div>
+</div>
+<div class="titlu">
+  EcoLog
+</div>
+
+<div class="container1">
+  <div class="mySlides1">
+    <div class="numbertext1">1 / 5</div>
+    <img src="img/1-EL.PNG" style="width:40%">
+  </div>
+
+  <div class="mySlides1">
+    <div class="numbertext1">2 / 5</div>
+    <img src="img/2-EL.png" style="width:40%">
+  </div>
+
+  <div class="mySlides1">
+    <div class="numbertext1">3 / 5</div>
+    <img src="img/3-EL.png" style="width:40%">
+  </div>
+    
+  <div class="mySlides1">
+    <div class="numbertext1">4 / 5</div>
+    <img src="img/4-EL.png" style="width:40%">
+  </div>
+
+  <div class="mySlides1">
+    <div class="numbertext1">5 / 5</div>
+    <img src="img/5-EL.png" style="width:40%">
+  </div>
+ 
+    
+  <a class="prev1" onclick="plusSlides1(-1)">❮</a>
+  <a class="next1" onclick="plusSlides1(1)">❯</a>
+
+  <div class="caption-container1">
+    <p id="caption1"></p>
+  </div>
+
+  <div class="row1">
+    <div class="column1">
+      <img class="demo1 cursor1" src="img/1-EL.png" style="width:100%" onclick="currentSlide1(1)" alt="Elev">
+    </div>
+    <div class="column1">
+      <img class="demo1 cursor1" src="img/2-EL.png" style="width:100%" onclick="currentSlide1(2)" alt="Elev">
+    </div>
+    <div class="column1">
+      <img class="demo1 cursor1" src="img/3-EL.png" style="width:100%" onclick="currentSlide1(3)" alt="Profesor">
+    </div>
+    <div class="column1">
+      <img class="demo1 cursor1" src="img/4-EL.png" style="width:100%" onclick="currentSlide1(4)" alt="Profesor">
+    </div>
+    <div class="column1">
+      <img class="demo1 cursor1" src="img/5-EL.png" style="width:100%" onclick="currentSlide1(5)" alt="Parinte">
+    </div>    
+  </div>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+var slideIndex1 = 1;
+showSlides1(slideIndex1);
+
+function plusSlides1(n) {
+  showSlides1(slideIndex1 += n);
+}
+
+function currentSlide1(n) {
+  showSlides1(slideIndex1 = n);
+}
+
+function showSlides1(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("demo1");
+  var captionText = document.getElementById("caption1");
+  if (n > slides.length) {slideIndex1 = 1}
+  if (n < 1) {slideIndex1 = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex1-1].style.display = "block";
+  dots[slideIndex1-1].className += " active";
+  captionText.innerHTML = dots[slideIndex1-1].alt;
+}
+</script>
+    
+</body>
+</html>

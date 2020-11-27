@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(bg.jpg) no-repeat;
+    background-size: cover;
+  }
+  .navbar ul { 
+    margin: 0; 
+    padding: 12px; 
+    list-style-type: none; 
+    text-align: center; 
+    background-color: #000; 
+    } 
+ 
+.navbar ul li {  
+    display: inline; 
+    } 
+ 
+.navbar ul li a {
+    font-family: 'Century Gothic',sans-serif; 
+    text-decoration: none; 
+    padding: .2em 1em; 
+    color: #fff; 
+    background-color: #000; 
+    } 
+ 
+.navbar ul li a:hover { 
+    font-family: 'Century Gothic',sans-serif;
+    color: #000; 
+    background-color: #fff; 
+    } 
+.content{
+    position:absolute;
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    top: 40px; 
+
+}
